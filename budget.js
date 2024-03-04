@@ -53,3 +53,22 @@ allBtn.addEventListener("click", function() {
 
 // HELPERS
 
+function Show(element) {
+    element.classList.remove("hide")
+}
+
+function hide( element ) {
+    element.forEach(element => {
+        element.classList.add("hide");
+    });
+}
+
+function active(element) {
+    element.classList.add("active")
+}
+
+function inactive( element ) {
+    element.forEach(element => {
+        element.classList.remove("active");
+    });
+}

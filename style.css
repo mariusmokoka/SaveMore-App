@@ -343,7 +343,7 @@ input[type=number] {
     display: block;
     width: 360px;
     bottom: 0;
-    border-top: 1px solid #d4cece;
+    border-top: 1px solid #ede8e8;
 }
 
 .budget-dashboard #income .input *{
