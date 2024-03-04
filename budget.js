@@ -88,7 +88,9 @@ function updateUI(){
     balance = calculateBalance(income, outcome);
 }
 
-function calculateTotal(){}
+function calculateTotal(type, list){
+    let sum = 0
+}
 
 function clearInput(inputs){
     inputs.forEach( input => {
