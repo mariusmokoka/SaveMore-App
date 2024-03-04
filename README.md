@@ -1,4 +1,4 @@
-# Budget-App-JavaScript
+# Budget-App
 
 ​ @Code Explained  Says Hi
 
