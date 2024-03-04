@@ -54,7 +54,7 @@ allBtn.addEventListener("click", function() {
 // HELPERS
 
 function Show(element) {
-    element.classList.remove("hide")
+    element.classList.remove("hide");
 }
 
 function hide( element ) {
@@ -64,7 +64,7 @@ function hide( element ) {
 }
 
 function active(element) {
-    element.classList.add("active")
+    element.classList.add("active");
 }
 
 function inactive( element ) {
