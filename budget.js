@@ -90,6 +90,9 @@ function updateUI(){
 
 function calculateTotal(type, list){
     let sum = 0
+    list.forEach( entry => {
+        if()
+    })
 }
 
 function clearInput(inputs){
