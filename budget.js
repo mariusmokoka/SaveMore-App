@@ -82,6 +82,19 @@ addIncome.addEventListener("click", function(){
 })
 
 // HELPERS
+function updateUI(){
+    income = calculateTotal("income", ENTRY_LIST);
+    outcome = calculateTotal("outcome", ENTRY_LIST);
+    balance = calculateBalance(income, outcome);
+}
+
+function calculateTotal(){}
+
+function clearInput(inputs){
+    inputs.forEach( input => {
+        input.value ="";
+    })
+}
 
 function Show(element) {
     element.classList.remove("hide");
