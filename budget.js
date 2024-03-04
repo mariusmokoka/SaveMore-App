@@ -51,6 +51,36 @@ allBtn.addEventListener("click", function() {
     inactive ( [incomeBtn, expenseBtn] );
 })
 
+addExpense.addEventListener("click", function(){
+    // IF ONE OF THE INPUTS IS EMPTY => EXIT
+    if(!expenseTitle.value || !expenseAmount.value ) return;
+    // SAVE THE ENTRY TO ENTRY_LIST
+    let expense = {
+        type : "expense",
+        title : expenseTitle.value,
+        amount : expenseAmount.value,
+    }
+    ENTRY_LIST.push(expense);
+
+    updateUI();
+    clearInput( [expenseTitle.value, expenseAmount.value] )
+})
+
+addIncome.addEventListener("click", function(){
+    // IF ONE OF THE INPUTS IS EMPTY => EXIT
+    if(!incomeTitle.value || !incomeAmount.value ) return;
+    // SAVE THE ENTRY TO ENTRY_LIST
+    let expense = {
+        type : "income",
+        title : incomeTitle.value,
+        amount : incomeAmount.value,
+    }
+    ENTRY_LIST.push(income);
+
+    updateUI();
+    clearInput( [incomeTitle.value, incomeAmount.value] )
+})
+
 // HELPERS
 
 function Show(element) {
